@@ -64,8 +64,7 @@ const deletePost = async (id) => {
 }
 
 const editPost = async (id) => {
-  // window.scrollTo(0, 0);
-
+  
   const res = await fetch(`${API_URL}/${id}`);
   const post = await res.json();
   title.value = post.title;
